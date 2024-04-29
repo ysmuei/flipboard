@@ -1,8 +1,9 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Split Flap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         body {
             margin: 0;
@@ -44,68 +45,66 @@
         }
     </style>
 </head>
-
 <body>
-<div class="example">
-    <div class="do-splitflap">London</div>
-    <div class="do-splitflap">Newyork</div>
-    <div class="do-splitflap">Tokyo</div>
-    <div class="do-splitflap">Roma</div>
-</div>
-
-<!-- <div class="example">
-    <h1>Autoplay disabled</h1>
-
-    <div class="click-splitflap">It s nice</div>
-</div>
-
-<div class="example">
-    <h1>JS-set text</h1>
-
-    <div class="empty-splitflap"></div>
-</div>
-
-<div class="example">
-    <h1>Modified size</h1>
-
-    <div class="resized-splitflap">It s a Small World</div>
-</div> -->
-
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="js/jquery/jquery.splitflap.js"></script>
-<script>
-    (function ($) {
-        $(document).ready(function () {
-            $('.do-splitflap')
-                    .splitFlap();
-
-            $('.click-splitflap')
-                    .splitFlap({
-                        textInit:   'Click me ',
-                        autoplay:   false,
-                        onComplete: function () {
-                            console.log('Done !');
-                        }
-                    })
-                    .click(function () {
-                        $(this).splitFlap('splitflap').animate();
-                    });
-
-            $('.empty-splitflap')
-                    .splitFlap({
-                        text: 'This is JS'
-                    });
-
-            var ratio = 0.5;
-            $('.resized-splitflap')
-                    .splitFlap({
-                        charWidth:  50 * ratio,
-                        charHeight: 100 * ratio,
-                        imageSize:  (2500 * ratio) + 'px ' + (100 * ratio) + 'px'
-                    });
-        });
-    })(jQuery);
-</script>
-
+    <div class="example">
+        <div class="do-splitflap">London</div>
+        <div class="do-splitflap">Newyork</div>
+        <div class="do-splitflap">Tokyo</div>
+        <div class="do-splitflap">Roma</div>
+    </div>
+    
+    <!-- <div class="example">
+        <h1>Autoplay disabled</h1>
+    
+        <div class="click-splitflap">It s nice</div>
+    </div>
+    
+    <div class="example">
+        <h1>JS-set text</h1>
+    
+        <div class="empty-splitflap"></div>
+    </div>
+    
+    <div class="example">
+        <h1>Modified size</h1>
+    
+        <div class="resized-splitflap">It s a Small World</div>
+    </div> -->
+    
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="jquery.splitflap.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.do-splitflap')
+                        .splitFlap();
+    
+                $('.click-splitflap')
+                        .splitFlap({
+                            textInit:   'Click me ',
+                            autoplay:   false,
+                            onComplete: function () {
+                                console.log('Done !');
+                            }
+                        })
+                        .click(function () {
+                            $(this).splitFlap('splitflap').animate();
+                        });
+    
+                $('.empty-splitflap')
+                        .splitFlap({
+                            text: 'This is JS'
+                        });
+    
+                var ratio = 0.5;
+                $('.resized-splitflap')
+                        .splitFlap({
+                            charWidth:  50 * ratio,
+                            charHeight: 100 * ratio,
+                            imageSize:  (2500 * ratio) + 'px ' + (100 * ratio) + 'px'
+                        });
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
