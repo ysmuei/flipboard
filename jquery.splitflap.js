@@ -370,7 +370,7 @@
 		}
 
 		var settings = $.extend({
-			image:          'images/22.png',
+			image:          'images/33.png',
 			imageSize:      '',
 			charsMap:       'ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789.,!?#@()+-=',
 			charWidth:      50,
