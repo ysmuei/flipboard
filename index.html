@@ -18,8 +18,12 @@
         .example {
             padding: 10px;
             width: fit-content;
-            margin: 0 auto 20px;
+            margin: auto;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column; /* 요소들을 위아래로 정렬 */
+            align-items: center; /* 수평 정렬 */
+            justify-content: center;
         }
 
         h1 {
@@ -31,7 +35,7 @@
         }
 
         .splitflap {
-            margin-bottom: 20px;
+            margin: 12px;
             -webkit-perspective-origin: top center;
             -moz-perspective-origin: top center;
             -ms-perspective-origin: top center;
@@ -42,6 +46,7 @@
             -ms-perspective: 900px;
             perspective: 900px;
         }
+      
     </style>
 </head>
 <body>
